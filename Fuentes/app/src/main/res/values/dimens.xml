@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginTopBase">20dp</dimen>
+    <dimen name="tamanioTitulo">30sp</dimen>
+    <dimen name="tamanioInputs">30dp</dimen>
+</resources>
