@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:app="http://schemas.android.com/apk/res-auto"    xmlns:tools="http://schemas.android.com/tools"    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cl.inacap.calculadoranotas.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTopBase"
+        android:text="@string/titulo"
+        android:textSize="@dimen/tamanioTitulo"
+        android:gravity="center_horizontal"
+        ></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTopBase"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/notaTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/tamanioInputs"
+            android:hint="@string/labelNota"></EditText>
+
+        <EditText
+            android:id="@+id/porcentajeTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/labelPorcentaje"
+            android:textSize="@dimen/tamanioInputs"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/agregarBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:textAllCaps="false"
+        android:textSize="@dimen/tamanioInputs"
+            android:layout_weight="1"
+        android:textColor="@color/textColor"
+        android:background="@color/colorVerde"
+        ></Button>
+        <Button
+            android:id="@+id/limpiarBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limpiar"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:textSize="@dimen/tamanioInputs"
+            android:textColor="@color/textColor"
+            android:background="@color/colorAmarillo"
+            ></Button>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notas Registradas"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/colorSecond"
+        android:textAllCaps="true"
+        android:layout_marginTop="@dimen/marginTopBase"
+        android:textSize="@dimen/tamanioTitulo"
+        ></TextView>
+    <ListView
+        android:id="@+id/notasLv"
+        android:layout_marginTop="@dimen/marginTopBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>
