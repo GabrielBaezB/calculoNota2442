@@ -3,4 +3,5 @@
     <string name="titulo">Registre sus Notas</string>
     <string name="labelNota">Nota</string>
     <string name="labelPorcentaje">Porcentaje %</string>
+    <string name="promedioLabel">Promedio</string>
 </resources>

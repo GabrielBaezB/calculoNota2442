@@ -62,6 +62,32 @@
             android:background="@color/colorAmarillo"
             ></Button>
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/promedioLl"
+        android:layout_marginTop="@dimen/marginTopBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+        <TextView
+            android:text="@string/promedioLabel"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="@dimen/tamanioInputs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:id="@+id/promedioTxt"
+            android:textSize="@dimen/tamanioInputs"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

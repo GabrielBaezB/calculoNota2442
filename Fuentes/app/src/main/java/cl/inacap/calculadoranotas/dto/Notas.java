@@ -22,6 +22,6 @@ public class Notas {
 
     @Override
     public String toString() {
-        return valor + " " + porcentaje + "%";
+        return valor + "                 " + porcentaje + "%";
     }
 }
